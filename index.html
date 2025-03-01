@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles.css">
+  <title>Desserts</title>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <h1>Desserts</h1>
+      <div class="menu-item">
+        <div class="item">
+          <img src = "./assets/images/image-waffle-desktop.jpg" alt="image-waffele-desktop"  class="dessert">
+            <div class="add-to-cart">
+              <div class="btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart" class="cart"/>
+                Add to Cart
+                <div class="counter">
+                  <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                  <span class="quantity">1</span>
+                  <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+                </div>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <p class="category">Waffle</p>
+              <h2>Waffle with Berries</h2>
+              <p class="price">$6.50</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src = "./assets/images/image-creme-brulee-desktop.jpg" alt="image-tiramisu-desktop" class="dessert">
+          <div class="add-to-cart">
+            <div class="btn">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"/>
+              Add to Cart
+              <div class="counter">
+                <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                <span class="quantity">1</span>
+                <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+              </div>
+            </div>
+          </div>
+          <div class = "menu-item-content">
+            <p class="category">Crème Brûlée</p>
+            <h2>Vanilla Bean Crème Brûlée</h2>
+            <p class="price">$7.00</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src = "./assets/images/image-macaron-desktop.jpg" alt="image-tiramisu-desktop" class="dessert">
+          <div class="add-to-cart">
+            <div class="btn">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"/>
+              Add to Cart
+              <div class="counter">
+                <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                <span class="quantity">1</span>
+                <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+              </div>
+          </div>
+          </div>
+          <div class = "menu-item-content">
+            <p class="category">Macaron</p>
+            <h2>Macaron Mix of Five</h2>
+            <p class="price">$8.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item">
+          <img src = "./assets/images/image-tiramisu-desktop.jpg" alt="image-waffele-desktop" class="dessert">
+          <div class="add-to-cart">
+            <div class="btn">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"/>
+              Add to Cart
+              <div class="counter">
+                <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                <span class="quantity">1</span>
+                <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+              </div>
+            </div>
+          </div>
+          <div class = "menu-item-content">
+            <p class="category">Tiramisu</p>
+            <h2>Classic Tiramisu</h2>
+            <p class="price">$5.50</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src = "./assets/images/image-baklava-desktop.jpg" alt="image-tiramisu-desktop" class="dessert">
+          <div class="add-to-cart">
+            <div class="btn">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"/>
+              Add to Cart
+              <div class="counter">
+                <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                <span class="quantity">1</span>
+                <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+              </div>
+            </div>
+          </div>
+          <div class = "menu-item-content">
+            <p class="category">Baklava</p>
+            <h2>Pistachio Baklava</h2>
+            <p class="price">$4.00</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src = "./assets/images/image-meringue-desktop.jpg" alt="image-tiramisu-desktop" class="dessert">
+          <div class="add-to-cart">
+            <div class="btn">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"/>
+              Add to Cart
+              <div class="counter">
+                <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                <span class="quantity">1</span>
+                <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+              </div>
+            </div>
+          </div>
+          <div class = "menu-item-content">
+            <p class="category">Pie</p>
+            <h2>Lemon Meringue Pie</h2>
+            <p class="price">$5.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="item">
+          <img src = "./assets/images/image-cake-desktop.jpg" alt="image-waffele-desktop" class="dessert">
+          <div class="add-to-cart">
+            <div class="btn">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"/>
+              Add to Cart
+              <div class="counter">
+                <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                <span class="quantity">1</span>
+                <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+              </div>
+            </div>
+          </div>
+          <div class = "menu-item-content">
+            <p class="category">Cake</p>
+            <h2>Red Velvet Cake</h2>
+            <p class="price">$4.50</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src = "./assets/images/image-brownie-desktop.jpg" alt="image-tiramisu-desktop" class="dessert">
+          <div class="add-to-cart">
+            <div class="btn">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"/>
+              Add to Cart
+              <div class="counter">
+                <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                <span class="quantity">1</span>
+                <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+              </div>
+            </div>
+          </div>
+          <div class = "menu-item-content">
+            <p class="category">Brownie</p>
+            <h2>Salted Caramel Brownie</h2>
+            <p class="price">$4.50</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src = "./assets/images/image-panna-cotta-desktop.jpg" alt="image-tiramisu-desktop" class="dessert">
+          <div class="add-to-cart">
+            <div class="btn">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add-to-cart"/>
+              Add to Cart
+              <div class="counter">
+                <button class="minus" onclick="decrementItem()"><img src="./assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity"></button>
+                <span class="quantity">1</span>
+                <button class="plus" onclick="incrementItem()"><img src="./assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity"></button>
+              </div>
+            </div>
+          </div>
+          <div class = "menu-item-content">
+            <p class="category">Panna Cotta</p>
+            <h2>Vanilla Panna Cotta</h2>
+            <p class="price">$6.50</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="your-cart">
+      <h1>Your cart (0)</h1>
+      <div class="empty-cart">
+      </div>
+      <div class="cart-content">
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

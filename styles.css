@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body{
+  background-color: hsl(13, 31%, 94%);
+  height: 100vh;
+}
+
+h2{
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.category{
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.price{
+  font-size: 1em;
+  font-weight: 700;
+  color: hsl(14, 86%, 42%);
+}
+
+.container{
+  width: 80%;
+  height: 100%;
+  max-width: 1440px;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.menu-item  {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.dessert{
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid transparent; 
+  transition: border 0.2s ease-in-out;
+}
+
+.add-to-cart{
+  position: relative;
+  transform: translate(15%, -70%);
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-weight: 600;
+  width: 70%;
+  color: black;
+  border: 2px solid hsl(14, 25%, 72%);
+  background-color: hsl(20, 50%, 98%);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden; 
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(14, 86%, 42%);
+  border-color: hsl(14, 86%, 42%);
+  color: transparent;
+}
+
+.item:hover .dessert {
+  border-color: hsl(14, 86%, 42%); 
+}
+
+.counter{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  visibility: hidden;
+}
+
+.btn:hover .counter{
+  visibility: visible;
+  color: hsl(20, 50%, 98%);
+}
+
+.counter .minus, .counter .plus{
+  cursor: pointer;
+  outline: none;
+  border: 1px solid hsl(20, 50%, 98%);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+/* .counter .minus:hover, .counter .plus:hover{
+  background-color: hsl(14, 86%, 42%);
+} */
+
+.btn .cart{
+  height: 20px;
+  width: 20px;
+}
+
+.your-cart h1{
+  color: hsl(14, 86%, 42%);
+  font-size: 1.5em;
+}
+
+.your-cart{
+  background-color: hsl(20, 50%, 98%);
+  border-radius: 20px;
+  padding: 25px;
+  width: 500px;
+  min-height: 500px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.empty-cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.empty-cart p{
+  font-size: 1em;
+  font-weight: 600;
+  color: hsl(12, 20%, 44%);
+}
+
+.illustration-empty-cart{
+  height: 250px;
+  width: 250px;
+}
+
+.cart-item {
+  margin-top: 30px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.cart-item h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.cart-item-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prices{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+}
+
+.cart-item-details .price p {
+  font-size: 1rem;
+}
+
+.cart-item-details img {
+  margin-left: auto;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.remove{
+  cursor: pointer;
+  border: 2px solid hsl(14, 25%, 72%); 
+  border-radius: 50%;
+  padding: 2px;
+  transition: all 0.1s ease;
+}
+
+.remove:hover{
+  filter: brightness(0) contrast(100%);
+  border-color: black;
+}
+
+.checkout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.checkout .carbon-neutral{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(13, 31%, 94%);
+  gap: 10px;
+}
+
+.carbon-neutral span{
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.carbon-neutral p{
+  font-size: 1em;
+}
+
+.carbon-neutral img{
+  height: 30px;
+  width: 30px;
+}
+
+.checkout button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 450px;
+  border-radius: 50px;
+  font-size: 1em;
+  font-weight: 600;
+  color: hsl(20, 50%, 98%);
+  border: none;
+  background-color: hsl(14, 86%, 42%);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.checkout button:hover{
+  background-color: hsl(14, 92%, 29%);
+}
